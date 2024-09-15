@@ -1,0 +1,92 @@
+.main {
+  grid-area: main;
+  padding: 1rem;
+  background-color: #fff;
+  padding-bottom: 60px; 
+  overflow-y: auto;
+  margin-top: 100px; 
+}
+
+
+.activity-wrapper {
+    width: 15rem;
+    height: 6rem; 
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    margin: 1rem;
+}
+.activity-wrapper > div {
+   padding-top: 1rem;
+}
+
+.activity-wrapper :hover  {
+  transition: width 2s, height 4s;
+}
+
+.dev-contri-wrapper {
+  margin-top:20px
+}
+
+.footer-wrapper{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  justify-content: center;
+  align-items: center; 
+  background-color: white;
+  
+}
+.footer {
+  display: flex;
+  margin-left: 30px;
+
+}
+
+.color-box{
+  content: "";
+  width: 20px;
+  height: 15px;
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.header {
+  margin: 0 0 20px 0;
+}
+
+.sub-header {
+  margin-top: 20px;
+}
+.sub-header{
+  margin-top: 20px;
+  
+}
+.pie-wrapper {
+  position: relative;
+}
+
+.developer-info {
+  position: absolute;
+  bottom: 2rem;
+  margin-left: 350px;
+}
+.developer-info > div{
+  padding: 5px;
+}
+
+.no-data-img {
+  opacity: .3;
+  width: 300px;
+  height:300px;
+}
+
+.no-data {
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(83, 81, 81);
+}

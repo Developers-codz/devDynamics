@@ -1,0 +1,13 @@
+.navbar {
+  grid-area: navbar;
+  padding: 1rem;
+  border-bottom: 2px solid rgb(225, 222, 222);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 100;
+}

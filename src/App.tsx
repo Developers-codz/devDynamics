@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Navbar, Filters, Main } from "./component";
 
 function App() {
+  const [filterData, setFilterData] = useState({});
+
+  type FilterData = {
+    developer: { value?: string | undefined; label: string };
+    date?: { value?: string | undefined; label: string } | null;
+  };
+
+  const applyFilters = (data: FilterData) => {
+    setFilterData(data);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App grid-container ">
+      <Navbar />
+      <Filters applyFilters={applyFilters} />
+      <Main filterData={filterData} />
     </div>
   );
 }
